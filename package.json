@@ -2,7 +2,8 @@
   "name": "deployedheroku",
   "version": "1.0.0",
   "engines": {
-    "node": "12.x"
+    "npm": "5.6.0",
+    "node": "8.10.0"
   },
   "scripts": {
     "ng": "ng",
@@ -11,7 +12,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --output-path dist"
+    "postinstall": "ng build --output-path dist",
+    "heroku-postbuild": "npm run build"
   },
   "private": true,
   "dependencies": {
